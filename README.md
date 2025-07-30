@@ -39,42 +39,26 @@ JWT_SECRET=Jwt token key
 
 ## 🔧 Setup & Installation
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/yourusername/url-shortener.git
-   cd url-shortener
+Follow these simple steps to get the project up and running locally:
 
-   Install dependencies
+---
 
-bash
-Copy
-Edit
+### 📁 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/url-shortener.git
+cd url-shortener
+
+📦 2. Install Dependencies
 npm install
-Configure environment
-
-Create a .env file with the following:
-
-env
-Copy
-Edit
-DATABASE_URL=<your_db_connection>
-JWT_SECRET=<your_jwt_secret>
+🛠️ 3. Configure Environment Variables
+Create a .env file in the root directory and add the following:
+DATABASE_URL=your_database_connection_string
+JWT_SECRET=your_jwt_secret
 PORT=3000
-Run migrations (if applicable)
-
-bash
-Copy
-Edit
+🗃️ 4. Run Database Migrations
+Using Drizzle ORM:
 npx drizzle-kit push
-Start the server
+▶️ 5. Start the Development Server
+npm run dev
 
-bash
-Copy
-Edit
-npm start
-🔐 Security Notes
-Passwords are hashed using bcrypt
-
-JWT tokens are signed and verified securely
-
-Users can only access and modify their own URLs
