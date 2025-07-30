@@ -51,14 +51,50 @@ cd url-shortener
 
 📦 2. Install Dependencies
 npm install
-🛠️ 3. Configure Environment Variables
-Create a .env file in the root directory and add the following:
+### 🛠️ 3. Configure Environment Variables
+
+To get your app working securely, you need to set up a `.env` file. Think of this as your **secret config vault** 🔐.
+
+---
+
+📂 **Step 1**: In the root of your project, create a file named:
+
+📄 **Step 2**: Add the following environment variables:
+
+```env
+# 🌐 Database connection string (MYSQL)
 DATABASE_URL=your_database_connection_string
-JWT_SECRET=your_jwt_secret
+
+# 🔐 Secret key used to sign JWT tokens (keep this safe!)
+JWT_SECRET=your_super_secret_key_here
+
+# 🚪 Port for local development server
 PORT=3000
-🗃️ 4. Run Database Migrations
-Using Drizzle ORM:
+
+### 🗃️ 4. Run Database Migrations
+
+Now it’s time to set up your database tables using **Drizzle ORM** — like planting the seeds for your app 🌱.
+
+---
+
+🚀 **Step-by-step**
+
+🛠️ First, make sure your `.env` file is set correctly and your database is running.
+
+🧱 Then run the migration command:
+
+```bash
 npx drizzle-kit push
-▶️ 5. Start the Development Server
+
+### ▶️ 5. Start the Development Server
+
+You're just one step away from running your app! 🚀
+
+---
+
+🖥️ **Run this command in your terminal:**
+
+```bash
 npm run dev
+
 
