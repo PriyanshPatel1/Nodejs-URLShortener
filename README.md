@@ -43,3 +43,38 @@ JWT_SECRET=Jwt token key
    ```bash
    git clone https://github.com/yourusername/url-shortener.git
    cd url-shortener
+
+   Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Configure environment
+
+Create a .env file with the following:
+
+env
+Copy
+Edit
+DATABASE_URL=<your_db_connection>
+JWT_SECRET=<your_jwt_secret>
+PORT=3000
+Run migrations (if applicable)
+
+bash
+Copy
+Edit
+npx drizzle-kit push
+Start the server
+
+bash
+Copy
+Edit
+npm start
+🔐 Security Notes
+Passwords are hashed using bcrypt
+
+JWT tokens are signed and verified securely
+
+Users can only access and modify their own URLs
