@@ -1,0 +1,2 @@
+i have to change package name connect-flash to express-flash message because they are not updated and using old library so its better to use latest express-flash message package.
+zod validator package 4.0.13 does not have inbuild email validator so i used 3.24.3
