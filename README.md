@@ -3,7 +3,7 @@
   <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="120" alt="URL Shortener Logo" />
   <h1>🔗 URL Shortener API</h1>
   <p>A simple, secure, and personal URL shortener built with Node.js, Express.js, and Drizzle ORM.</p>
-  <p><strong>🔐 JWT Auth</strong> • <strong>🧾 Drizzle ORM</strong> • 
+  <p><strong>🔐 JWT Auth</strong> • <strong>🧾 Drizzle ORM(MYSQL)</strong> • 
 </div>
 
 ---
